@@ -275,10 +275,10 @@ end
                 </hgroup>
                 <article>
                     <pre>
-if                destruct(if):
+  if                destruct(if):
 / | \                   cList = destruct(if.c)
-c  x  y                  xList = destruct(if.x)
-yList = destruct(if.y)
+c  x  y                 xList = destruct(if.x)
+                        yList = destruct(if.y)
 
 end = NOP.new
 xList.end.next = end
@@ -299,9 +299,9 @@ return List.new(cList.start, end)
                 </hgroup>
                 <article>
                     <pre>
-while               destruct(while):
-/  \                    cList = destruct(while.c)
-c    x                   xList = destruct(while.x)
+ while               destruct(while):
+ /  \                   cList = destruct(while.c)
+c    x                  xList = destruct(while.x)
 
 end = NOP.new
 xList.end.next = cList.start
@@ -406,7 +406,7 @@ return List.new(cList.start, end)
                                 <li>Asignado al entrar a un método.</li>
                                 <li>Liberado antes de retornar.</li>
                                 <li>Contiene todas las variables locales y parámetros.</li>
-                                <li>Se asume que todos las variables y parámeotros ocupan un word.</li>
+                                <li>Se asume que todos las variables y parámetros ocupan un word.</li>
                             </ul>
                         </li>
                         <li>Offsets de variables locales y parámetros:
