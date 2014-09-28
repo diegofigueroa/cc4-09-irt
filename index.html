@@ -199,10 +199,10 @@ __________            __________                             __________
 
 
 
-if( x < y ){
-a = 0;
-}else{
-a = 1;
+if ( x < y ) {
+   a = 0;
+} else {
+   a = 1;
 }
 
 
@@ -231,7 +231,7 @@ Load Y
 |
 Branch(x < y, label_true)
 |
-Load 0
+Load 1
 |
 Store a
 |
@@ -239,7 +239,7 @@ Jump(label_end)
 |
 Label(label_true)
 |
-Load 1
+Load 0
 |
 Store a
 |
